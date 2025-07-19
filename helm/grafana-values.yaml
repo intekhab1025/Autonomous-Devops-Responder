@@ -1,0 +1,4 @@
+adminUser: admin
+adminPassword: graf-Admin123
+service:
+  type: LoadBalancer

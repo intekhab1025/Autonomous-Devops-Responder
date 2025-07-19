@@ -1,0 +1,10 @@
+# Backend configuration for staging environment
+# terraform/environments/staging/backend.hcl
+
+# REQUIRED: Replace with your unique S3 bucket name
+# S3 bucket names must be globally unique across all AWS accounts
+bucket         = "your-unique-incident-responder-terraform-state-staging"
+key            = "incident-responder/staging/terraform.tfstate"
+region         = "us-west-2"  # Change to your preferred region
+encrypt        = true
+dynamodb_table = "your-unique-incident-responder-terraform-locks"
