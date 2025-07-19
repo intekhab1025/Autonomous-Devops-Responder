@@ -1,0 +1,12 @@
+# Global code owners - all files require approval from repository maintainer
+* @intekhab1025
+
+# Critical infrastructure files require special attention
+/terraform/ @intekhab1025
+/helm/ @intekhab1025
+/.github/ @intekhab1025
+/app/src/actions/ @intekhab1025
+
+# Documentation can have additional reviewers (add community members later)
+/docs/ @intekhab1025
+/README.md @intekhab1025

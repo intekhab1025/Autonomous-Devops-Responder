@@ -1,0 +1,30 @@
+groups:
+- name: test-app.rules
+  rules:
+  - alert: TestAppPodDown
+    expr: kube_deployment_status_replicas_available{deployment="test-app"} < 1
+    for: 1m
+    labels:
+      severity: critical
+      deployment: test-app
+    annotations:
+      summary: "test-app deployment has no available pods."
+      description: "The test-app deployment in the default namespace has no available pods."
+  - alert: TestAppHighMemoryUsage
+    expr: (container_memory_usage_bytes{pod=~"test-app.*",container!="POD"} / container_spec_memory_limit_bytes{pod=~"test-app.*",container!="POD"}) > 0.8
+    for: 1m
+    labels:
+      severity: critical
+      deployment: test-app
+    annotations:
+      summary: "Test app memory usage is above 80%"
+      description: "Memory usage is above 80% for more than 1 minute in test-app."
+  - alert: TestApp2PodDown
+    expr: kube_deployment_status_replicas_available{deployment="test-app-2"} < 3
+    for: 1m
+    labels:
+      severity: critical
+      deployment: test-app-2
+    annotations:
+      summary: "test-app-2 deployment has less than 2 available pods."
+      description: "The test-app-2 deployment in the default namespace has less than 2 available pods."

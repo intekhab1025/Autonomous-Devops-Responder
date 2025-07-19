@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+streamlit>=1.25.0
+streamlit-mermaid>=0.3.0
+openai
+pydantic
+requests
+prometheus_client
+pytest
+boto3
+kubernetes
+pandas
+numpy
+plotly
+altair>=4.0.0
+pillow
+matplotlib

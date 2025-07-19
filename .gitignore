@@ -1,0 +1,154 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+.crash
+.terraform/
+terraform.tfvars
+backend.hcl
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform/.terraform.lock.hcl
+.terraformrc
+terraform.rc
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+app/venv/
+app/.env
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/settings.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Test and validation files
+test_*.py
+validate_*.py
+*_test.py
+*_validation.py
+test_results/
+validation_results/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Logs and temporary files
+*.log
+logs/
+*.tmp
+*.temp
+.cache/
+temp/
+tmp/
+
+# Documentation build
+docs/_build/
+site/
+.mkdocs/
+
+# Application specific
+app/src/ui/.streamlit/
+app/streamlit_cache/
+.streamlit/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# AWS and secrets
+.aws/
+aws-credentials
+*.pem
+*.key
+secrets.json
+secrets.yaml
+api_key
+*.env.local
+*.env.staging
+*.env.production
+
+# Kubernetes
+kubeconfig
+*.kubeconfig
+k8s-secrets/
+
+# Monitoring and metrics
+grafana-data/
+prometheus-data/
+alert-manager-data/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+dashboard_*.py
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Custom validation and test scripts (from recent enhancements)
+DASHBOARD-FIXES.md
+test_fixes.py
+test_app2_alert.py
+validate_dashboard.py
+validation_*.py
+test_*.json
+*.test.log
